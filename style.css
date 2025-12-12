@@ -1,0 +1,396 @@
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    background-color: #fcfcfc;
+    line-height: 1.6;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+div:nth-of-type(2) {
+    max-width: 1150px;
+    margin: 60px auto;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    background-color: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+tr {
+    display: flex;
+    min-height: 700px;
+}
+
+td:first-child {
+    flex: 1;
+    padding: 60px 40px;
+    background-color: #f9fff9;
+    border-right: 1px solid #e0e0e0;
+    transition: background-color 0.3s, border-right 0.3s;
+}
+
+td:last-child {
+    flex: 2;
+    padding: 60px 80px;
+    background-color: #fff;
+    transition: background-color 0.3s;
+}
+
+div:first-of-type {
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: background-color 0.3s, border-bottom 0.3s;
+}
+
+h2 {
+    margin: 0 50px;
+}
+
+h2 a {
+    color: #ff6699;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+    font-weight: 500;
+    transition: all 0.2s ease-in-out;
+    border-radius: 8px;
+}
+
+h2 a:hover {
+    color: #fff;
+    background-color: #ff6699;
+}
+
+#themeBtn {
+    padding: 10px 20px;
+    background-color: #66cc99;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    margin-right: 50px;
+}
+
+#themeBtn:hover {
+    background-color: #4CAF50;
+}
+
+#home {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#home img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #ff99cc;
+    box-shadow: 0 0 0 10px rgba(255, 102, 153, 0.05);
+    margin-bottom: 20px;
+    transition: border 0.3s, box-shadow 0.3s;
+}
+
+#home h2 {
+    margin: 0;
+}
+
+#home h2 a {
+    color: #333;
+    font-size: 1.8em;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 0;
+    transition: color 0.3s;
+}
+
+#home span {
+    color: #888;
+    font-style: italic;
+    font-size: 1.1em;
+    display: block;
+    margin-top: 5px;
+    transition: color 0.3s;
+}
+
+#contact {
+    margin-bottom: 40px;
+}
+
+#contact h3 {
+    color: #66cc99;
+    margin-bottom: 15px;
+    font-size: 1.4em;
+    transition: color 0.3s;
+}
+
+#contact p {
+    font-size: 1em;
+    margin: 5px 0;
+}
+
+#skills {
+    margin-bottom: 40px;
+}
+
+#skills h3 {
+    color: #66cc99;
+    margin-bottom: 15px;
+    font-size: 1.4em;
+    transition: color 0.3s;
+}
+
+#skills dd {
+    padding: 10px 15px;
+    background-color: #e6f7e6;
+    border-radius: 25px;
+    margin: 8px 8px 8px 0;
+    font-size: 0.95em;
+    color: #333;
+    display: inline-block;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+#skills dd:hover {
+    background-color: #66cc99;
+    color: #fff;
+}
+
+.hidden {
+    display: none !important;
+}
+
+#toggleSkillsBtn {
+    align-self: flex-end;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ff6699;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+#toggleSkillsBtn:hover {
+    background-color: #ff3377;
+}
+
+#skillsSection {
+    width: 100%;
+}
+
+#about {
+    margin-bottom: 50px;
+}
+
+#about h2 {
+    color: #ff6699;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    transition: color 0.3s;
+}
+
+#about p {
+    line-height: 2;
+    text-align: justified;
+    margin: 0;
+    color: #555;
+    font-size: 1.1em;
+    transition: color 0.3s;
+}
+
+#message h2 {
+    color: #ff6699;
+    font-size: 2em;
+    margin-bottom: 25px;
+    transition: color 0.3s;
+}
+
+#message form p {
+    margin-bottom: 20px;
+}
+
+#message input[type="text"],
+#message input[type="email"],
+#message textarea {
+    width: 100%;
+    padding: 15px;
+    margin-top: 8px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 1em;
+    transition: border-color 0.3s, background-color 0.3s, color 0.3s;
+    min-height: 100px;
+    resize: vertical;
+}
+
+#message input[type="text"]:focus,
+#message input[type="email"]:focus,
+#message textarea:focus {
+    border-color: #ff6699;
+    box-shadow: 0 0 8px rgba(255, 102, 153, 0.2);
+    outline: none;
+}
+
+#message input[type="submit"] {
+    background-color: #66cc99;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+#message input[type="submit"]:hover {
+    background-color: #4CAF50;
+}
+
+div[style*="text-align: center;"] {
+    background-color: #f9fff9;
+    padding: 25px 0;
+    border-top: 1px solid #eee;
+    margin: 0;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    transition: background-color 0.3s, border-top 0.3s;
+}
+
+div[style*="text-align: center;"] p {
+    margin: 0;
+    color: #888;
+    font-size: 0.9em;
+    transition: color 0.3s;
+}
+
+.dark-mode {
+    background-color: #1a1a1a !important;
+    color: #e0e0e0 !important;
+}
+
+.dark-mode div:nth-of-type(2) {
+    background-color: #242424 !important;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5) !important;
+}
+
+.dark-mode td:first-child {
+    background-color: #333333 !important;
+    border-right: 1px solid #444 !important;
+}
+
+.dark-mode td:last-child {
+    background-color: #242424 !important;
+}
+
+.dark-mode div:first-of-type {
+    background-color: #2c2c2c !important;
+    border-bottom: 1px solid #444 !important;
+}
+
+.dark-mode #editJobBtn {
+    background-color: #ff99cc !important;
+}
+
+.dark-mode #editJobBtn:hover {
+    background-color: #cc3366 !important;
+}
+
+.dark-mode #toggleSkillsBtn {
+    background-color: #ff99cc !important;
+    color: #1a1a1a !important;
+}
+
+.dark-mode #toggleSkillsBtn:hover {
+    background-color: #cc3366 !important;
+}
+
+.dark-mode #themeBtn {
+    background-color: #88ffbb !important;
+    color: #1a1a1a !important;
+}
+
+.dark-mode #themeBtn:hover {
+    background-color: #66cc99 !important;
+}
+
+.dark-mode #home img {
+    border: 5px solid #cc3366 !important;
+    box-shadow: 0 0 0 10px rgba(204, 51, 102, 0.2) !important;
+}
+
+.dark-mode #home h2 a {
+    color: #e0e0e0 !important;
+}
+
+.dark-mode #home span {
+    color: #aaa !important;
+}
+
+.dark-mode h2 a {
+    color: #ff99cc !important;
+}
+
+.dark-mode #contact h3,
+.dark-mode #skills h3 {
+    color: #88ffbb !important;
+}
+
+.dark-mode #about h2,
+.dark-mode #message h2 {
+    color: #ff99cc !important;
+}
+
+.dark-mode #about p {
+    color: #ccc !important;
+}
+
+.dark-mode #skills dd {
+    background-color: #444444 !important;
+    color: #e0e0e0 !important;
+}
+
+.dark-mode #skills dd:hover {
+    background-color: #88ffbb !important;
+    color: #333 !important;
+}
+
+.dark-mode input[type="text"],
+.dark-mode input[type="email"],
+.dark-mode textarea {
+    background-color: #333 !important;
+    color: #e0e0e0 !important;
+    border: 1px solid #555 !important;
+}
+
+.dark-mode input[type="text"]:focus,
+.dark-mode input[type="email"]:focus,
+.dark-mode textarea:focus {
+    border-color: #ff99cc !important;
+}
+
+.dark-mode div[style*="text-align: center;"] {
+    background-color: #2c2c2c !important;
+    border-top: 1px solid #444 !important;
+}
+
+.dark-mode div[style*="text-align: center;"] p {
+    color: #aaa !important;
+}
